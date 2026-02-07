@@ -15,12 +15,12 @@
     }
 
     button {
-      padding: 12px 25px;
+      padding: 15px 30px;
       font-size: 18px;
       margin: 20px;
-      cursor: pointer;
-      border-radius: 10px;
       border: none;
+      border-radius: 10px;
+      cursor: pointer;
     }
 
     #yes {
@@ -35,23 +35,28 @@
     }
   </style>
 </head>
+
 <body>
 
-<h1>Will you be my Valentine? Sakshi 💖</h1>
+  <h1>Will you be my Valentine Sakshi 💖</h1>
 
-917982332728
-<button id="no">No 😜</button>
+  <button id="yes"
+    onclick="window.location.href='https://wa.me/91917982332728?text=Yes%20I%20will%20be%20your%20Valentine%20❤️'">
+    Yes 💕
+  </button>
 
-<script>
-  var noBtn = document.getElementById("no");
+  <button id="no">No 😜</button>
 
-  noBtn.addEventListener("mouseover", function() {
-    var x = Math.random() * window.innerWidth;
-    var y = Math.random() * window.innerHeight;
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-  });
-</script>
+  <script>
+    var noBtn = document.getElementById("no");
+
+    noBtn.addEventListener("mouseover", function () {
+      var x = Math.random() * (window.innerWidth - 100);
+      var y = Math.random() * (window.innerHeight - 50);
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    });
+  </script>
 
 </body>
 </html>
